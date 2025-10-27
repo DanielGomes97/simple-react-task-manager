@@ -29,14 +29,13 @@ function App() {
       setTasks(data);
     };
     // SE QUISER VOCÊ PODE CHAMAR UMA API PARA PEGAR AS TAREFAS
-    fetchTasks();
+    //fetchTasks();
   });
 
   function OnTaskClick(taskId) {
     const newTasks = tasks.map((task) => {
       //preciso atualizar essa tarefa
       if (task.id === taskId) {
-        // ... = tudo que ta na tarefa;
         return { ...task, isCompleted: !task.isCompleted };
       }
       //não preciso atualizar
