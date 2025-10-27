@@ -1,75 +1,55 @@
-# Projeto feito para fins de estudo
+# 🚀 Gerenciador de Tarefas React (Projeto de Estudo)
 
-Esse projeto foi desenvolvido junto com a fullstack club, com o Felipe Rocha, intuito é aprender o react pra iniciar projeto com next.js
+### 🌟 Visão Geral
 
-# Instalação/Configuração no projeto
+Este é um aplicativo **Gerenciador de Tarefas / Lista de Afazeres (To-Do List)** desenvolvido com **React.js**. O projeto foi criado com o objetivo principal de **estudo e prática** dos conceitos fundamentais do React.
 
-## React + Vite : https://vite.dev/guide/
+O principal propósito deste projeto é servir como uma **base sólida de aprendizado** para dominar o ecossistema React e preparar o conhecimento para frameworks mais avançados, como o **Next.js**.
 
-React com vite para iniciar o projeto.
+### 💡 Contexto do Projeto
 
-Install: npm create vite@latest
+Este projeto foi desenvolvido seguindo o currículo e as orientações do curso **Fullstack Club** com **Felipe Rocha**.
 
-## Tailwind: https://tailwindcss.com/docs/installation/using-vite
+---
 
-Tailwind é um css pronto para estilizar o site todo.
+## 🛠️ Stack de Tecnologias e Bibliotecas Chave
 
-Install: npm install tailwindcss @tailwindcss/vite
+O projeto utiliza as seguintes tecnologias e bibliotecas:
 
-vite.config.ts
+| Categoria       | Tecnologia           | Finalidade                                                                  |
+| :-------------- | :------------------- | :-------------------------------------------------------------------------- |
+| **Framework**   | **React**            | Biblioteca principal para construção da interface de usuário.               |
+| **Tooling**     | **Vite**             | Ferramenta de build e servidor de desenvolvimento rápido.                   |
+| **Estilização** | **Tailwind CSS**     | Framework CSS "utility-first" para estilização ágil.                        |
+| **Navegação**   | **React Router DOM** | Roteamento declarativo para criar múltiplas rotas/páginas na aplicação.     |
+| **Ícones**      | **Lucide React**     | Biblioteca de ícones simples e consistentes.                                |
+| **Utilitários** | **UUID**             | Gerador de IDs únicos e aleatórios para o gerenciamento de itens (tarefas). |
 
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
-export default defineConfig({
-plugins: [
-tailwindcss(),
-],
-})
-=
-CSS
-@import "tailwindcss";
+---
 
-## Lucide: https://lucide.dev/guide/packages/lucide-react
+## 🏃 Como Rodar o Projeto (Getting Started)
 
-Obter icones para aplicação.
+Siga estas instruções para configurar e executar o projeto localmente.
 
-Install: npm install lucide-react
+### Pré-requisitos
 
-ex use: return <Camera color="red" size={48} />;
+Certifique-se de ter o [Node.js](https://nodejs.org/en/) e o npm (ou yarn/pnpm) instalados na sua máquina.
 
-## UUIID : https://www.npmjs.com/package/uuid
+### Instalação
 
-Gerador de IDs aleatorio
+1.  **Clone o repositório:**
 
-install: npm install uuid
-use: import { v4 } from 'uuid';
-v4(); // ⇨ '9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d'
+    ```bash
+    git clone https://github.com/DanielGomes97/simple-react-task-manager.git
 
-## React Router Dom : https://www.npmjs.com/package/react-router-dom
+    ```
 
-Consegue criar novas rotas na url ex: site.com/NOVO-CAMINHO...
-
-install: npm install react-router-dom
-
-use: main.jsx:
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import TaskPage from "./pages/TaskPage.jsx";
-
-const router = createBrowserRouter([
-{
-path: "/",
-element: <App />,
-},
-{
-path: "/task",
-element: <TaskPage />,
-},
-]);
-
-createRoot(document.getElementById("root")).render(
-<StrictMode>
-<RouterProvider router={router} />
-</StrictMode>
-);
+2.  **Instale as dependências do projeto:**
+    ```bash
+    npm install
+    ```
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+    A aplicação estará disponível no endereço indicado no seu console (geralmente `http://localhost:5173`).
