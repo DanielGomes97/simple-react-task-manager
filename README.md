@@ -4,6 +4,8 @@
 
 Este é um aplicativo **Gerenciador de Tarefas / Lista de Afazeres (To-Do List)** desenvolvido com **React.js**. O projeto foi criado com o objetivo principal de **estudo e prática** dos conceitos fundamentais do React.
 
+Aprendendo com o **Felipe Rocha** [GitHub:](https://github.com/felipemotarocha), na plataforma do **full Stack Club**, de fato é muito boa, recomendo a todos!
+
 O principal propósito deste projeto é servir como uma **base sólida de aprendizado** para dominar o ecossistema React e preparar o conhecimento para frameworks mais avançados, como o **Next.js**.
 
 ### 💡 Contexto do Projeto
